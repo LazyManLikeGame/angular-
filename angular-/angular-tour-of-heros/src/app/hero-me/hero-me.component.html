@@ -7,7 +7,7 @@
 </div> 
 
 
-<div *ngIf='selector'>{{selector.name}}{{selector.id}}</div>
+
 
 <div>
     <ul>
@@ -16,3 +16,6 @@
         </li>
     </ul>
 </div>
+
+<app-hero-detailme [hero] = 'selector'></app-hero-detailme> 
+<!-- 父组件像子组件传值  [hero]="selector" 是 Angular 的属性绑定语法。 属于单向数据绑定-->
