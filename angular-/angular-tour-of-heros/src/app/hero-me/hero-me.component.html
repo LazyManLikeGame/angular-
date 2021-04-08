@@ -1,0 +1,18 @@
+<div>
+    {{hero.name}}
+    {{hero.id}}
+</div>
+<div>
+    <input type="text"  [(ngModel)]="hero.id">
+</div> 
+
+
+<div *ngIf='selector'>{{selector.name}}{{selector.id}}</div>
+
+<div>
+    <ul>
+        <li *ngFor='let hero of heroes' (click)="onselect(hero)">
+            <span>{{hero.id}}</span><span>{{hero.name}}</span>
+        </li>
+    </ul>
+</div>
